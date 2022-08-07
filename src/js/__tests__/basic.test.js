@@ -5,3 +5,22 @@ test('should sum', () => {
 
   expect(result).toBe(6);
 });
+
+//homework
+
+import { warriorHealth } from '../basic';
+
+test('warriors healthy', () => {
+  const healthResult = warriorHealth({name: 'маг', health: 90});
+  expect(healthResult).toBe("healthy");
+});
+
+test('warriors wounded', () => {
+  const healthResult = warriorHealth({name: 'воин', health: 30});
+  expect(healthResult).toBe("wounded");
+});
+
+test('warriors critical', () => {
+  const healthResult = warriorHealth({name: 'гном', health: 10});
+  expect(healthResult).toBe("critical");
+});

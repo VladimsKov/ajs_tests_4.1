@@ -4,7 +4,7 @@ stack: node 12  # окружение
 
 branches:
   only:
-    - master  # ветка git
+    - main  # ветка git
 
 cache: node_modules  # кеширование
 
@@ -17,4 +17,4 @@ build_script:
   - npm run build   # команда сборки
 
 test_script:
-  - npm run lint && npm test  # скрипт тестированияnpm 
+  - npm run lint && npm test  # скрипт тестирования npm
